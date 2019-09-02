@@ -1,7 +1,7 @@
 type Rect = { x: number; y: number; width: number; height: number };
 
-export default function(...elements: Element[]): Promise<Rect | Rect[]> {
-  return new Promise(resolve => {
+const getBoundingClientRectsAsync = (...elements: Element[]): Promise<Rect | Rect[]> =>
+  new Promise(resolve => {
     const observer = new IntersectionObserver((entries, ob) => {
       ob.disconnect();
       const rects: Rect[] = [];
@@ -18,4 +18,5 @@ export default function(...elements: Element[]): Promise<Rect | Rect[]> {
       observer.observe(element);
     }
   });
-}
+
+export default getBoundingClientRectsAsync;
