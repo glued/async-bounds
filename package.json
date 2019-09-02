@@ -4,6 +4,14 @@
   "description": "getBoundingClientRect() async and without browser re-layout",
   "main": "dist/index.bundle.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "getBoundingClientRect",
+    "getBoundingClientRect()",
+    "async",
+    "intersectionObserver",
+    "reflow",
+    "repaint"
+  ],
   "bugs": "https://github.com/glued/async-bounds/issues",
   "repository": {
     "type": "git",
