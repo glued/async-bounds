@@ -1,6 +1,6 @@
 {
   "name": "async-bounds",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "getBoundingClientRect() async and without browser re-layout",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
