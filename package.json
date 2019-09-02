@@ -1,0 +1,19 @@
+{
+  "name": "async-bounds",
+  "version": "1.0.0",
+  "description": "getBoundingClientRect() async and without browser re-layout",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.20.0",
+    "typescript": "^3.6.0",
+    "tslib": "^1.10.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0"
+  },
+  "author": "glued",
+  "license": "MIT"
+}
