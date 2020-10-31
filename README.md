@@ -26,7 +26,7 @@ Or async
 
 ```ts
 import asyncBounds from 'async-bounds';
-const { x, y, width, height } = await getBoundingClientRectsAsync(element);
+const { x, y, width, height } = await asyncBounds(element);
 ```
 
 Or Multiple elements
@@ -36,7 +36,7 @@ import asyncBounds from 'async-bounds';
 
 // Spread array in, array out
 const elements = document.querySelectorAll('div');
-getBoundingClientRectsAsync(...elements).then(boundsArray => {
+asyncBounds(...elements).then(boundsArray => {
   for (const bounds of boundsArray) {
     const { x, y, width, height } = bounds;
   }
